@@ -8,30 +8,34 @@ body{
     width: 100%;
     min-height: 70px;
     float: left;
-    background-color: #F4F5F7;
+    background:  #F4F5F7;
+    
+    
 }
 
 .nav_logo{
-    min-width: 20%;
-    min-height: 55px;
-    margin-top: 2px;
+    min-width: 16%;
+    min-height: 70px;
     float: left;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 5px;
+    margin-top: 1px;
+    
+    
 }
 
 .nav_menu{
-    min-width: 52%;
+    min-width: 55%;
     float: left;
     min-height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-right: 3%;
-    
+   
+    margin-left: 50px;
+    margin-right: 10px;
     
 }
 
@@ -39,11 +43,11 @@ body{
 .nav_menu::after {
     content : "";
     position : absolute;
-    width : 99%;
+    width : 100%;
     height : 2px;
     background-color: #25347666;
     bottom: 0px; 
-    left: 57px;
+    left: 40px;
   } 
 
 
@@ -53,14 +57,27 @@ body{
     margin: 0;
 }
 
+
+.nav_menu ul li:hover{
+    border-bottom: 2px solid #27AE60;
+    
+}
 .nav_menu ul li{
     list-style-type: none;
     float: left;
-    padding: 18px;
+    padding: 17px;
     box-sizing: border-box;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 20px;
     letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;  
+    color: #1F1F24;
    
 }
 
@@ -69,13 +86,14 @@ body{
 }
 
 .nav_3{
-    min-width: 25%;
-    min-height: 81px;
+    min-width: 20%;
+    min-height: 76px;
     float: left;
     background: #253476;
     color: white;
     display: flex;
     justify-content: flex-start;
+   margin-left: 22px;
    
     
 }
@@ -85,10 +103,17 @@ body{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-left: 10px;
     
     
+}
+
+.back{
+    background: #F4F5F7;
+    width: 100%;
+    height: 230px;
+
 }
 
 .main{
@@ -98,48 +123,59 @@ body{
     
 }
 
+.main_foto{
+    position: relative;
+}
+
 .main img{
     width: 550px;
     height: 300px;
     float: left;
     margin-top: 70px;
     
+    
 }
 
 .main_foto img{
-    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .main_foto span{
     position: absolute;
-    top: 250px;
-    left: 430px;
+    top: 170px;
+    left: 240px;
     color: white;
-    font-size: 70px;
+    font-size: 65px;
     
 } 
 
 .main_text{
-    width: 300px;
+    width: 400px;
     height: 100px;
     float: left;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-left: 70px;
+    
 }
 
 .main_text p{
     font-family: 'Zilla Slab';
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
-       
+    font-size: 35px;
+    line-height: 43x;
+    color: #3E3E3E;
         
 }
 
 .finish_time{
-    width: 500px;
+    width: 400px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 45px;
     float: left;
 }
 
@@ -148,19 +184,40 @@ body{
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
+    line-height: 22px;
+    color: #1F1F24;
+    position: relative;
+    
 
 }
+.finish_time::after{
+    content : "";
+    position : absolute;
+    width : 100%;
+    height : 3px;
+    background: #F4F5F7;
+    bottom: 0px;
+    right: 0px;
+    
+}
+
 
 .time{
     color: #27AE60;
     margin-left: 20px;
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
 }
 
 
 .share{
     width: 150px;
     height: 20px;
-    
+    margin-top: 20px;
     float: left;
     display: flex;
     justify-content: space-between;
@@ -170,21 +227,14 @@ body{
 }
 
 .share .icon{
-    border-radius: 20px;
-    box-sizing: border-box;
     font-size: 20px;
-    
-    
 }
+
 
 .icon span{
     color:  #27AE60;
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 20px;
-
-    
-    
 }
 
 .footer_text{
@@ -222,6 +272,7 @@ body{
 .fotter_1 p{
     line-height: 25px;
     box-sizing: border-box;
+    
 }
 
 .fotter_1 h3{
@@ -310,22 +361,23 @@ body{
     float: left;
 }
 
-.recept{
+ .recept{
     float: left;
     width: 100%;
     height: 40px;
     margin-top: 30px;
     position: relative;
+    
 }
 
 .recept::after{
     content : "";
     position : absolute;
-    width : 71%;
+    width : 94%;
     height : 1px;
-    background-color: #25347666;
+    background-color:  #F4F5F7;
     bottom: 0px; 
-    right: 240px;
+    right: 50px;
 }
 
 .recept_logo{
@@ -341,6 +393,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .recept_logo_2{
@@ -361,3 +414,136 @@ body{
     
 }
 
+.recept_logo h4 {
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 80.88%;
+    color: #3E3E3E;
+}
+
+
+.recept_logo_2 a{
+    border-bottom: 1px solid #3E3E3E;
+    
+    text-decoration: none;
+} 
+
+
+
+
+@media only screen and (max-width: 662px) {
+    .nav_3{
+        display: none;
+    }
+
+    .nav_menu{
+        display: none;
+    }
+    
+    .nav_logo{
+        width: 100%;
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        float: left;
+        
+    }
+
+    
+
+    .main_foto span{
+        display: none;
+    }
+
+    
+
+    .main_foto img{
+        width: 100%
+    }
+            
+    .main_text{
+        display: none;
+    }
+    
+    .main_text p{
+        font-family: 'Zilla Slab';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 43x;
+        color: #3E3E3E;
+            
+    }
+    
+    .finish_time{
+        width: 400px;
+        height: 50px;
+        margin-top: 45px;
+        float: left;
+        display: none;
+    }
+    
+    .finish_time{
+        font-family: 'Zilla Slab';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1F1F24;
+        position: relative;
+        
+    
+    }
+    .finish_time::after{
+        content : "";
+        position : absolute;
+        width : 100%;
+        height : 3px;
+        background: #F4F5F7;
+        bottom: 0px;
+        right: 0px;
+        
+    }
+    
+    
+    .time{
+        color: #27AE60;
+        margin-left: 20px;
+        font-family: 'Zilla Slab';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        display: none;
+    
+    }
+    
+    
+    .share{
+        display: none;
+    
+    }
+    
+    .share .icon{
+        display: none;
+    }
+    
+
+    
+    .footer_text{
+        display: none;
+        
+    }
+    
+    
+    .fotter_1{
+        display: none;
+        
+    }
+    
+    
+    
+}
